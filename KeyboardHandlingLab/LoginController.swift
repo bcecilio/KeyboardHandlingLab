@@ -59,7 +59,7 @@ class LoginController: UIViewController {
     private func moveKeyboardUP(_ height: CGFloat) {
         if keyboardIsVisible {return}
         originalConstraint = stackViewYConstraint
-        stackViewYConstraint.constant -= (height * 0.80)
+        stackViewYConstraint.constant -= (height * 0.20)
         UIView.animate(withDuration: 0.3) {
             self.view.layoutIfNeeded()
         }
